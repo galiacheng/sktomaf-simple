@@ -2,13 +2,9 @@
 name = "simple-sk"
 version = "0.1.0"
 
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-
 dependencies = [
     "semantic-kernel>=1.37.0,<2.0.0",
-    "azure-identity >= 1.13",
+    "azure-identity >= 1.13"
 ]
 
 [project.optional-dependencies]
@@ -22,7 +18,3 @@ dev = [
 filterwarnings = [
     "ignore::pydantic.PydanticDeprecatedSince211",
 ]
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["*"]
